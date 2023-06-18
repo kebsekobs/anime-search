@@ -1,0 +1,19 @@
+<h2>Anime</h2>
+<div class="search">
+  <label for="series-name">Anime name: </label>
+  <input type="text" [(ngModel)]="seriesName" id="series-name">
+  <button type="button" (click)="search(seriesName)">
+    Search
+  </button>
+</div>
+
+<ul class="series">
+  <li *ngFor="let series1 of series">
+    <span class="badge">{{ series1.id || -1 }}</span>
+    <span class="name">{{series1.title}}</span>
+    <button type="button" class="info" title="info series"
+      (click)="info(series1)">
+      Info
+    </button>
+  </li>
+</ul>

@@ -1,0 +1,8 @@
+<h2>{{messageService.seriesInfo?.title}}</h2>
+<ng-container *ngIf="messageService.seriesInfo">
+  <br>
+  <p>Start date: {{messageService.seriesInfo.startDate}}</p>
+  <p>End date: {{messageService.seriesInfo.endDate}}</p>
+  <p>Rating: {{messageService.seriesInfo.rating}}</p>
+  <p>Description: {{messageService.seriesInfo.description}}</p>
+</ng-container>
